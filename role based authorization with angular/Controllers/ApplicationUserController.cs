@@ -34,7 +34,7 @@ namespace role_based_authorization_with_angular.Controllers
         //POST : /api/ApplicationUser/Register
         public async Task<Object> PostApplicationUser(ApplicationUserModel model)
         {
-            model.Role = "Admin";
+            model.Role = "admin";
             var applicationUser = new ApplicationUser() {
                 UserName = model.UserName,
                 Email = model.Email,
